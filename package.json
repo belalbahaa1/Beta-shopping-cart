@@ -1,4 +1,5 @@
 {
+  "homepage": "http://belalbahaa1.github.io/Beta-shopping-cart",
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "sass": "node-sass -w src/ -o src/ --recursive",
     "build": "react-scripts build",
@@ -39,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
